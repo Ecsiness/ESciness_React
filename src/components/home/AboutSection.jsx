@@ -1,0 +1,73 @@
+import { Button } from "../ui/button";
+
+const AboutSection = () => {
+  return (
+    <section className="my-40 ">
+      <h2 className="text-center text-3xl my-8 ">
+        درباره <span className="text-light-perpule">اکسینس</span>
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <img
+          src="../../../public/assets/images/about-team-img 2.svg"
+          width={540}
+          height={500}
+          alt="about-pic"
+          className="hidden md:block w-full max-w-[500px] mx-auto"
+        />
+
+        <div className="grid">
+          <div className="max-sm:order-last max-sm:text-center max-sm:mb-10">
+            <h2 className="text-3xl py-5 ">تجربه و نوآوری در کنار هم</h2>
+            <p className="font-normal ">
+              اکسینس با تجربه‌ای نزدیک به دو سال فعالیت حرفه‌ای در زمینه مشاوره
+              و توسعه کسب‌وکارها، هم‌اکنون در سه لاین تخصصی نرم‌افزار،
+              شتاب‌دهنده و مشاوره خدمات خود را ارائه می‌دهد. این شرکت به‌طور
+              رسمی با نام کیان ایده اکسین ثبت شده و با تکیه بر تخصص و
+              توانمندی‌های تیم مجرب خود راه‌حل‌های نوآورانه و اثرگذار برای
+              شرکت‌ها و استارتاپ‌های مختلف را فراهم می‌کند. اکسینس برای تامین
+              منابع انسانی (HR) و بخش تحقیق و توسعه (R&D) با تیم استارتاپی ™IR
+              همکاری دارد.
+            </p>
+          </div>
+
+          <div className="grid max-sm:items-center my-10 text-center max-sm:grid-cols-2  max-sm:order-1">
+            <img
+              src="../../../public/assets/images/about-team-img 2.svg"
+              width={100}
+              height={150}
+              alt="about-pic"
+              className="sm:hidden max-sm:size-96"
+            />
+            <div className="flex items-center justify-center lg:gap-5 my-10 text-center max-sm:flex-col max-sm:gap-10">
+              <div>
+                <p className="text-4xl max-sm:text-3xl max-sm:text-md">
+                  <span className="text-light-perpule">+</span>400
+                </p>
+                <p className="font-normal">پروپوزال های تحقیقاتی</p>
+              </div>
+              <div>
+                <p className="text-4xl max-sm:text-3xl max-sm:textsdm">
+                  <span className="text-light-perpule">+</span>90
+                </p>
+                <p className="font-normal">پروژه های در حال اجرا</p>
+              </div>
+              <div>
+                <p className="text-4xl max-sm:text-3xl max-sm:text-md">
+                  <span className="text-light-perpule">+</span>150
+                </p>
+                <p className="font-normal">پروژه های موفق</p>
+              </div>
+            </div>
+          </div>
+          <Button className="max-sm:order-last max-sm:text-sm p-8 lg:w-2/3 ">
+            {/* <Link href="/consulation">
+              برای دریافت مشاوره رایگان کلیک کنید.
+            </Link> */}
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
