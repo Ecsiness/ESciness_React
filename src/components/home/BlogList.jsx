@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import BlogCard from "./BlogCard";
 const BlogList = () => {
@@ -9,7 +10,7 @@ const BlogList = () => {
         </h2>
         <Button className="group relative overflow-hidden overflow-x-hidden hover:text-light-perpule p-8 ">
           <span className="relative z-10 ">
-            {/* <Link href="/weblog"> مشاهده بیشتر</Link> */}
+            <Link to="/weblog"> مشاهده بیشتر</Link>
           </span>
           <span className="absolute inset-0 overflow-hidden rounded-md">
             <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-white transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>

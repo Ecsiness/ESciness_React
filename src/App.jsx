@@ -1,9 +1,10 @@
-import Consulation from "./components/Consulation";
+import { RouterProvider } from "react-router-dom";
+import AppRouter from "./routers";
 
 function App() {
   return (
     <>
-      <Consulation />
+      <RouterProvider router={AppRouter} />
     </>
   );
 }

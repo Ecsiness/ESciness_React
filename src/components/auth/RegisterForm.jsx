@@ -6,8 +6,9 @@ import { Input } from "../ui/input";
 import { Checkbox } from "../ui/checkbox";
 // import { register } from "@/utils/services/authServices";
 import { FaCircleInfo } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 const RegisterForm = () => {
-  //   const router = useRouter();
+  const navigate = useNavigate();
 
   const {
     register: formRegister,
@@ -24,7 +25,7 @@ const RegisterForm = () => {
   const onSubmit = async () => {
     // const res = await register(data)
     alert("ثبت نام با موفقیت انجام شد");
-    // router.push("/auth/login");
+    navigate("/auth/login");
   };
 
   return (

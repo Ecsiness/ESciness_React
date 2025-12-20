@@ -4,9 +4,10 @@ import { Input } from "./ui/input";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { FormConsultation } from "../utils/validation/Validation";
+import { useNavigate } from "react-router-dom";
 
 const Consulation = () => {
-  //   const router = useRouter();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -16,7 +17,7 @@ const Consulation = () => {
   });
   const onSubmit = (data) => {
     console.log(data);
-    // router.push("/");
+    navigate("/");
   };
   return (
     <section className="relative bg-gradient-to-r from-[#F0EBFF] to-[#F6F4FB] consultation-bg h-full py-20">

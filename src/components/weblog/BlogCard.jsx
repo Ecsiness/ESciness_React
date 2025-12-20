@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { CgArrowTopLeftO } from "react-icons/cg";
 
@@ -15,7 +16,7 @@ const BlogCard = () => {
         <h2>عنوان مطلب</h2>
         <p>توضیح کوتاه درباره مطلب</p>
         <Button variant="link" className="text-perpule group">
-          {/* <Link href={`/weblog/id`}>ادامه مطلب</Link> */}
+          <Link to={`/weblog/id`}>ادامه مطلب</Link>
           <span className="transition-transform duration-300 group-hover:rotate-90">
             <CgArrowTopLeftO />
           </span>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 const AboutSection = () => {
@@ -60,9 +61,7 @@ const AboutSection = () => {
             </div>
           </div>
           <Button className="max-sm:order-last max-sm:text-sm p-8 lg:w-2/3 ">
-            {/* <Link href="/consulation">
-              برای دریافت مشاوره رایگان کلیک کنید.
-            </Link> */}
+            <Link to="/consulation">برای دریافت مشاوره رایگان کلیک کنید.</Link>
           </Button>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 const HeroSection = () => {
@@ -47,11 +48,11 @@ const HeroSection = () => {
         </div>
         <div className="flex gap-5 justify-center ">
           <Button className="p-8 max-sm:w-36 lg:w-48 md:text-sm ">
-            {/* <Link href="/contact">با ما در ارتباط باشید</Link> */}
+            <Link to="/contact">با ما در ارتباط باشید</Link>
           </Button>
 
           <Button className="text-light-perpule max-sm:w-36 bg-[#F7F5FF] p-8 lg:w-48 md:text-sm">
-            {/* <Link href="/consulation">دریافت مشاوره رایگان</Link> */}
+            <Link to="/consulation">دریافت مشاوره رایگان</Link>
           </Button>
         </div>
       </div>

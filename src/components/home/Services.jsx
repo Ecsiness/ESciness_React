@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 const Services = () => {
@@ -16,7 +17,7 @@ const Services = () => {
           تیم حرفه ای ما طیف گسترده ای از خدمات را ارائه میدهد.
         </p>
         <Button className="w-48 m-auto p-6">
-          {/* <Link href="/consulation">دریافت مشاوره</Link> */}
+          <Link to="/consulation">دریافت مشاوره</Link>
         </Button>
       </div>
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:p-3 max-md:p-5">

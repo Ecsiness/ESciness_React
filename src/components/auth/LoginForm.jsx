@@ -4,9 +4,10 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { LoginScema } from "../../utils/validation/Validation";
 import { FaCircleInfo } from "react-icons/fa6";
+import { Link, useNavigate } from "react-router-dom";
 // import { login } from "@/utils/services/authServices";
 const LoginForm = () => {
-  //   const router = useRouter();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -17,7 +18,7 @@ const LoginForm = () => {
   const onSubmit = async () => {
     // const res = await login(data)
     alert("وارد شدید !");
-    // router.push("/");
+    navigate("/");
   };
   return (
     <form

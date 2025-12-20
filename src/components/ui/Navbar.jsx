@@ -10,11 +10,36 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+
+const navigation = [
+  { name: "صفحه اصلی", href: "/", current: true },
+  { name: "خدمات", href: "/services", current: false },
+  { name: "نمونه کار ها", href: "/simple", current: false },
+  { name: "وبلاگ", href: "/weblog", current: false },
+  { name: "درباره ما", href: "/about", current: false },
+  { name: "تماس باما", href: "/contact", current: false },
+];
+
+const navItems = [
+  { to: "/", icon: <FaHome className="size-8" />, label: "صفحه اصلی" },
+  { to: "/services", icon: <FaStore className="size-8" />, label: "خدمات" },
+  { to: "/simple", icon: <FaRegStar className="size-8" />, label: "نمونه کار" },
+  { to: "/weblog", icon: <FaFileAlt className="size-8" />, label: "وبلاگ" },
+  {
+    to: "/about",
+    icon: <FaUserFriends className="size-8" />,
+    label: "درباره ما",
+  },
+  {
+    to: "/contact",
+    icon: <FaPhoneAlt className="size-8" />,
+    label: "تماس با ما",
+  },
+];
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  //   const pathName = usePathname();
-  const pathName = 1;
   return (
     <>
       {openMenu && (
@@ -37,33 +62,31 @@ const Navbar = () => {
           />
         </div>
         <ul className="flex items-center justify-center gap-5 max-sm:hidden max-md:text-[10px]">
-          <li className={pathName === "/" && "text-perpule font-bold"}>
-            {/* <Link href="/">صفحه اصلی</Link> */}
-          </li>
-          <li className={pathName === "/services" && "text-perpule font-bold"}>
-            {/* <Link href="/services">خدمات</Link> */}
-          </li>
-          <li className={pathName === "/simple" && "text-perpule font-bold"}>
-            {/* <Link href="/simple">نمونه کار ها</Link> */}
-          </li>
-          <li className={pathName === "/weblog" && "text-perpule font-bold"}>
-            {/* <Link href="/weblog">وبلاگ</Link> */}
-          </li>
-          <li className={pathName === "/about" && "text-perpule font-bold"}>
-            {/* <Link href="/about">درباره ما</Link> */}
-          </li>
-          <li className={pathName === "/contact" && "text-perpule font-bold"}>
-            {/* <Link href="/contact">تماس باما</Link> */}
-          </li>
+          {navigation.map((item) => (
+            <li key={item.name}>
+              <NavLink
+                to={item.href}
+                // className={classNames(
+
+                // )}
+                className={({ isActive }) =>
+                  `${isActive ? "text-perpule font-bold" : undefined}`
+                }
+                aria-current={item.current ? "page" : undefined}
+              >
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
         <div>
           <Button className="group relative  overflow-hidden overflow-x-hidden hover:text-light-perpule lg:w-54 h-14 max-sm:w-28 max-sm:h-10 max-sm:p-2 max-sm:text-[9px] md:w-32 md:text-xs lg:text-xl">
             <span className="relative z-10 ">
-              {/* <Link href="/auth/register">ثبت نام</Link> | */}
-              {/* <Link href="/auth/login"> ورود</Link> */}
+              <Link to="/auth/register">ثبت نام</Link> |
+              <Link to="/auth/login"> ورود</Link>
             </span>
-            <span class="absolute inset-0 overflow-hidden rounded-md">
-              <span class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-white transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+            <span className="absolute inset-0 overflow-hidden rounded-md">
+              <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-white transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
             </span>
           </Button>
         </div>
@@ -80,62 +103,25 @@ const Navbar = () => {
           </div>
 
           {/* Menu Items */}
-          <div className="flex items-center justify-center ">
-            <ul className="space-y-10 space-x-10 text-xl w-48">
-              <li
-                className={`flex items-center gap-3 ${
-                  pathName === "/" &&
-                  "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-light-perpule after:to-white"
-                }`}
-              >
-                <FaHome className="size-8" />
-                {/* <Link href="/">صفحه اصلی</Link> */}
-              </li>
-              <li
-                className={`flex items-center gap-3 ${
-                  pathName === "/services" &&
-                  "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-light-perpule after:to-white"
-                }`}
-              >
-                <FaStore className="size-8" />
-                {/* <Link href="/services">خدمات</Link> */}
-              </li>
-              <li
-                className={`flex items-center gap-3 ${
-                  pathName === "/simple" &&
-                  "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-light-perpule after:to-white"
-                }`}
-              >
-                <FaRegStar className="size-8" />
-                {/* <Link href="/simple">نمونه کار</Link> */}
-              </li>
-              <li
-                className={`flex items-center gap-3 ${
-                  pathName === "/weblog" &&
-                  "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-light-perpule after:to-white"
-                }`}
-              >
-                <FaFileAlt className="size-8" />
-                {/* <Link href="/weblog">وبلاگ</Link> */}
-              </li>
-              <li
-                className={`flex items-center gap-3 ${
-                  pathName === "/about" &&
-                  "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-light-perpule after:to-white"
-                }`}
-              >
-                <FaUserFriends className="size-8" />
-                {/* <Link href="/about">درباره ما</Link> */}
-              </li>
-              <li
-                className={`flex items-center gap-3 ${
-                  pathName === "/contact" &&
-                  "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-light-perpule after:to-white"
-                }`}
-              >
-                <FaPhoneAlt className="size-8" />
-                {/* <Link href="/contact">تماس با ما</Link> */}
-              </li>
+          <div className="flex items-center justify-center overflow-hidden">
+            <ul className="space-y-5 space-x-10 text-xl w-48 overflow-hidden">
+              {navItems.map((item, index) => (
+                <li key={index}>
+                  <NavLink
+                    to={item.to}
+                    className={({ isActive }) =>
+                      `flex items-center gap-3 ${
+                        isActive
+                          ? "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-light-perpule after:to-white"
+                          : ""
+                      }`
+                    }
+                  >
+                    {item.icon}
+                    <span>{item.label}</span>
+                  </NavLink>
+                </li>
+              ))}
             </ul>
             <div
               className={`-mr-6 p-5 bg-light-perpule rounded-l-full sm:hidden ${
