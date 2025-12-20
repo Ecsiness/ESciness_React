@@ -32,8 +32,8 @@ const Services = () => {
           <h2>مشاوره مدیریت</h2>
         </div>
         <p className="font-normal">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است
+          ارائه راهکارهای جامع برای بهینه سازی فرآیندهای مدیریتی وارتقای
+          عملکردسازمان ها با تمرکز بر بهبود استراتژی ها و افزایش کارایی تیم ها
         </p>
       </div>
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:p-3 max-md:p-5">
@@ -48,8 +48,9 @@ const Services = () => {
           <h2>مشاوره بازریابی</h2>
         </div>
         <p className="font-normal">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است
+          طراحی برنامه ها و استراتژی های موثر بازاریابی برای جذب مشتریان هدف،
+          تقویت برندو بهینه سازی کمپین های تبلیغاتی بر اساس تحلیل بازار و رفتار
+          مصرف کننده
         </p>
       </div>
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:col-span-2 max-sm:p-3 max-md:p-5">
@@ -64,8 +65,9 @@ const Services = () => {
           <h2>مشاوره منابع مالی و حسابداری</h2>
         </div>
         <p className="font-normal">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است
+          کمک به کسب و کارها در مدیریت منابع مالی، تحلیل هزینه ها و درآمدها و
+          ارائه راهکارهایی برای تحلیل هزینه ها و درآمدها و ارائه راهکارهایی برای
+          بهینه سازی ساختار مالی و کاهش ریسک های مالی
         </p>
       </div>
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:p-3 max-md:p-5">
@@ -80,8 +82,8 @@ const Services = () => {
           <h2>مشاوره منابع انسانی</h2>
         </div>
         <p className="font-normal">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است
+          پشتیبانی از کسب و کارها در جذب، توسعه و مدیریت نیروی انسانی، بهینه
+          سازی ساختارهای سازمانی وایجاد سیستم های ارزیابی عملکرد و انگیزشی
         </p>
       </div>
       <div className="col-span-2 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:col-span-1 max-sm:p-3 max-md:p-5">
@@ -96,8 +98,8 @@ const Services = () => {
           <h2>مشاوره فناوری اطلاعات</h2>
         </div>
         <p className="font-normal">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است
+          ارئه راهکارهای نوین فناوری اطلاعات برای بهبود زیر ساخت های دیجیتال،
+          افزایش امنیت داده ها و بهینه سازی فرآیندهای کسب و کار در محیط دیجیتال
         </p>
       </div>
       <div className="col-span-2 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:col-span-1 max-sm:p-3 max-md:p-5">
@@ -112,8 +114,8 @@ const Services = () => {
           <h2>مشاوره منابع سرمایه گذاری</h2>
         </div>
         <p className="font-normal">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است
+          ارائه تحلیل های دقیق و راهکارهای استراتژیک برای انتخاب بهترین فرصت های
+          سرمایه گذاری، مدیریت ریسک ها و افزایش بازده سرمایه
         </p>
       </div>
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:p-3 max-md:p-5">
@@ -128,8 +130,8 @@ const Services = () => {
           <h2>مشاوره ثبت اختراع</h2>
         </div>
         <p className="font-normal">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است
+          راهنمایی کامل برای ثبت اختراعات، حمایت از مالکیت فکری و کمک به تجاری
+          سازی ایده های نوآورانه در بازار
         </p>
       </div>
     </section>

@@ -30,11 +30,11 @@ const AboutUs = () => {
       <div className="my-40 text-center ">
         <h2 className="text-light-perpule text-4xl underline py-10">تیم ما</h2>
         <p>
-          اکسینس با داشتن بیش از ۲۰۰ مشاور مجرب، ۵ مشاور ارشد و ۱۰۰ دستیار پروژه
-          توانسته شبکه گسترده‌ای از نیروی انسانی متخصص در زمینه ی گوناگون را
-          ایجاد کند. تیم اکسینس در این مدت توانسته در کارنامه ی فعالیت خود،
-          مشاوره تخصصی به بیش از ۱۰ شرکت؛ و همچنین ۳۵ مشاوره ی فعال به صورت مدت
-          دار(ماهانه) و بالای ۲۵۰ پروپوزال حرفه ای را ثبت کند.
+          تا به امروز اکسینس در بیش از ۲۵ استارتاپ و کسب‌وکار نوپا، ۱۵ کسب‌وکار
+          میان‌رده و ۱۰ شرکت سرمایه‌گذاری فعالیت کرده است. همچنین مشاوره برای
+          بیش از ۱۱ پروژه تحقیقاتی و ۲ پروژه بین‌المللی از دیگر دستاوردهای ماست.
+          به علاوه تیم ما در فرآیند ثبت اختراع و مارکتینگ کسب‌وکارها نیز نقش
+          مؤثری ایفا کرده است.
         </p>
       </div>
       <div className="my-40 flex items-center justify-center gap-10 max-sm:flex-col-reverse">
@@ -75,7 +75,7 @@ const AboutUs = () => {
             width={672}
             height={500}
             alt="Services"
-            className="w-2xl lg:h-[500px] -mt-10"
+            className="w-2xl lg:h-125 -mt-10"
           />
         </div>
       </div>
@@ -86,7 +86,7 @@ const AboutUs = () => {
             width={672}
             height={500}
             alt="Services"
-            className="w-2xl lg:h-[500px] -mt-10"
+            className="w-2xl lg:h-125 -mt-10"
           />
         </div>
         <div className="md:w-2xl  lg:h-96  bg-stone-100 border rounded-3xl p-5">

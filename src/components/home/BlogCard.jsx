@@ -12,7 +12,7 @@ const BlogCard = () => {
         className="w-full"
       />
       <div className="flex md:flex-col max-sm:justify-around py-5 items-center rounded-b-3xl bg-stone-100 hover:shadow-2xl">
-        <h2>مقاله شماره یک</h2>
+        <h2>مقاله شماره دو</h2>
         <Button className="px-15 text-sm mt-2">
           <Link to="/weblog/id">بیشتر بخوانید</Link>
         </Button>

@@ -23,7 +23,7 @@ const Footer = () => {
   //   const pathName = 1;
   return (
     <>
-      <footer className="bg-BgFooter rounded-t-4xl h-[647px] max-sm:h-[1300px]  max-md:h-[1300px] p-10">
+      <footer className="bg-BgFooter rounded-t-4xl h-161 max-sm:h-325 max-md:h-325 p-10">
         <section className="flex items-center justify-between p-5 max-sm:flex-col max-md:flex-col">
           <div>
             <img
@@ -68,7 +68,10 @@ const Footer = () => {
             <h2 className="bg-light-perpule p-2 text-white mb-5 w-28 max-md:hidden rounded-2xl">
               ارتباط با ما:
             </h2>
-            <p>آدرس:البرز،کرج،گلشهرویلا ،بلوار مصطفی خمینی ،مجتمع کسری</p>
+            <p>
+              آدرس : البرز، کرج، گلشهر، بلوار مصطفی خمینی، مجتمع کسری، واحد 25 ،
+              پلاک7612
+            </p>
             <p className="py-5">ایمیل : infoexiness@gmail.com</p>
             <p>تماس : 09365008696</p>
           </div>

@@ -13,8 +13,8 @@ const BlogCard = () => {
         alt="blog-card-image"
       />
       <div className="flex flex-col items-center justify-center gap-5 mt-4">
-        <h2>عنوان مطلب</h2>
-        <p>توضیح کوتاه درباره مطلب</p>
+        <h2>عنوان مقاله</h2>
+        <p>توضیح کوتاه درباره مقاله</p>
         <Button variant="link" className="text-perpule group">
           <Link to={`/weblog/id`}>ادامه مطلب</Link>
           <span className="transition-transform duration-300 group-hover:rotate-90">
