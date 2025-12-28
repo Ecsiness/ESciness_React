@@ -10,6 +10,7 @@ import RegisterPage from "././auth/register/RegisterPage";
 import LoginPage from "././auth/login/LoginPage";
 import NotFoundPage from "./NotFoundPage";
 import HomePage from "./Home/HomePage";
+import ServicePage from "./service/ServicePage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutPage />,
+      },
+      {
+        path: "/services",
+        element: <ServicePage />,
       },
       {
         path: "/contact",
