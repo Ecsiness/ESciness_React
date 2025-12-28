@@ -58,7 +58,7 @@ const Navbar = () => {
             width={128}
             height={150}
             alt="logo-image"
-            className="max-sm:w-[120px] mb-3 md:w-32 lg:w-40 mx-8"
+            className="max-sm:w-30 mb-3 md:w-32 lg:w-40 mx-8"
           />
         </div>
         <ul className="flex items-center justify-center gap-5 max-sm:hidden max-md:text-[10px]">
@@ -86,7 +86,7 @@ const Navbar = () => {
               <Link to="/auth/login"> ورود</Link>
             </span>
             <span className="absolute inset-0 overflow-hidden rounded-md">
-              <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-white transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
+              <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-white transition-all duration-500 group-hover:translate-x-0 group-hover:scale-150"></span>
             </span>
           </Button>
         </div>
@@ -112,7 +112,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                       `flex items-center gap-3 ${
                         isActive
-                          ? "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-light-perpule after:to-white"
+                          ? "relative pb-2 after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-linear-to-r after:from-light-perpule after:to-white"
                           : ""
                       }`
                     }
