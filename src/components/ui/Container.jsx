@@ -1,5 +1,5 @@
 const Container = ({ children }) => {
-  return <div className="mx-16.75 max-sm:mx-5 bg-transparent">{children}</div>;
+  return <div className="max-w-6xl mx-auto bg-transparent">{children}</div>;
 };
 
 export default Container;
