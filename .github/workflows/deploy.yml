@@ -29,6 +29,10 @@ jobs:
       - name: Build
         run: npm run build
 
+      # This is the magic step that fixes the 404 error on refresh!
+      - name: Copy index to 404
+        run: cp dist/index.html dist/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
