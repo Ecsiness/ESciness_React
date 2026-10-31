@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Ecsisness_React/', // <--- ADD THIS LINE HERE
+  base: '/ESciness_React/', // <--- ADD THIS LINE HERE
   plugins: [react(), tailwindcss()],
 })
