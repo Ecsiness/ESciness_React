@@ -18,25 +18,25 @@ const HeroSection = () => {
         {/* just for mobile responsive */}
         <div className="grid grid-cols-2 gap-1 my-6 sm:hidden w-[240px] m-auto">
           <img
-            src="../../../public/assets/images/hero sec/hero pic 1.svg"
+            src={import.meta.env.BASE_URL + "assets/images/hero-sec/hero-pic-1.svg"}
             width={150}
             height={200}
             alt="hero-pic"
           />
           <img
-            src="../../../public/assets/images/hero sec/hero pic 3.svg"
+            src={import.meta.env.BASE_URL + "assets/images/hero-sec/hero-pic-3.svg"}
             width={150}
             height={200}
             alt="hero-pic"
           />
           <img
-            src="../../../public/assets/images/hero sec/hero pic 4.svg"
+            src={import.meta.env.BASE_URL + "assets/images/hero-sec/hero-pic-4.svg"}
             width={150}
             height={200}
             alt="hero-pic"
           />
           <img
-            src="../../../public/assets/images/hero sec/hero pic 2.svg"
+            src={import.meta.env.BASE_URL + "assets/images/hero-sec/hero-pic-2.svg"}
             width={150}
             height={200}
             alt="hero-pic"
@@ -58,25 +58,25 @@ const HeroSection = () => {
       </div>
       <div className="grid grid-cols-2 gap-5 max-sm:hidden md:mx-5">
         <img
-          src="../../../public/assets/images/hero sec/hero pic 1.svg"
+          src={import.meta.env.BASE_URL + "assets/images/hero-sec/hero-pic-1.svg"}
           width={300}
           height={300}
           alt="hero-pic"
         />
         <img
-          src="../../../public/assets/images/hero sec/hero pic 3.svg"
+          src={import.meta.env.BASE_URL + "assets/images/hero-sec/hero-pic-3.svg"}
           width={300}
           height={300}
           alt="hero-pic"
         />
         <img
-          src="../../../public/assets/images/hero sec/hero pic 4.svg"
+          src={import.meta.env.BASE_URL + "assets/images/hero-sec/hero-pic-4.svg"}
           width={300}
           height={300}
           alt="hero-pic"
         />
         <img
-          src="../../../public/assets/images/hero sec/hero pic 2.svg"
+          src={import.meta.env.BASE_URL + "assets/images/hero-sec/hero-pic-2.svg"}
           width={300}
           height={300}
           alt="hero-pic"
