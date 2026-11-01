@@ -7,14 +7,14 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 const BrandIconsSlider = () => {
   const icons = [
-    { id: 1, image: "../../../public/assets/images/brands/brand1.svg" },
-    { id: 4, image: "../../../public/assets/images/brands/brand4.svg" },
-    { id: 5, image: "../../../public/assets/images/brands/brand5.svg" },
-    { id: 6, image: "../../../public/assets/images/brands/brand6.svg" },
-    { id: 7, image: "../../../public/assets/images/brands/brand7.svg" },
-    { id: 8, image: "../../../public/assets/images/brands/brand8.svg" },
-    { id: 9, image: "../../../public/assets/images/brands/brand9.svg" },
-    { id: 10, image: "../../../public/assets/images/brands/brand10.svg" },
+    { id: 1, image: import.meta.env.BASE_URL + "assets/images/brands/brand1.svg" },
+    { id: 4, image: import.meta.env.BASE_URL + "assets/images/brands/brand4.svg" },
+    { id: 5, image: import.meta.env.BASE_URL + "assets/images/brands/brand5.svg" },
+    { id: 6, image: import.meta.env.BASE_URL + "assets/images/brands/brand6.svg" },
+    { id: 7, image: import.meta.env.BASE_URL + "assets/images/brands/brand7.svg" },
+    { id: 8, image: import.meta.env.BASE_URL + "assets/images/brands/brand8.svg" },
+    { id: 9, image: import.meta.env.BASE_URL + "assets/images/brands/brand9.svg" },
+    { id: 10, image: import.meta.env.BASE_URL + "assets/images/brands/brand10.svg" },
   ];
 
   return (
