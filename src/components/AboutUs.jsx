@@ -20,7 +20,7 @@ const AboutUs = () => {
         </div>
         <div className=" p-2 z-10 rounded-4xl ">
           <img
-            src="../../../public/assets/images/about-page/about-img.svg"
+            src={import.meta.env.BASE_URL + "assets/images/about-page/about-img.svg"}
             width={560}
             height={320}
             alt="about-image max-sm:"
@@ -71,7 +71,7 @@ const AboutUs = () => {
         </div>
         <div>
           <img
-            src="../../../public/assets/images/about-page/project-img.svg"
+            src={import.meta.env.BASE_URL + "assets/images/about-page/project-img.svg"}
             width={672}
             height={500}
             alt="Services"
@@ -82,7 +82,7 @@ const AboutUs = () => {
       <div className="my-40 flex max-sm:flex-col items-center justify-center gap-10">
         <div>
           <img
-            src="../../../public/assets/images/about-page/services-img.svg"
+            src={import.meta.env.BASE_URL + "assets/images/about-page/services-img.svg"}
             width={672}
             height={500}
             alt="Services"
