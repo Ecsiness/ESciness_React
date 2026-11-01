@@ -6,7 +6,7 @@ const BlogCard = () => {
   return (
     <div className="flex flex-col lg:size-80 rounded-4xl shadow-2xs border max-sm:mt-10 hover:shadow-2xl transition-all duration-200 hover:-translate-y-2">
       <img
-        src="../../../public/assets/images/blog-page-01.png.svg"
+        src={import.meta.env.BASE_URL + "assets/images/blog-page-01.png.svg"}
         width={320}
         height={160}
         className="object-cover h-40 w-80 rounded-t-4xl"

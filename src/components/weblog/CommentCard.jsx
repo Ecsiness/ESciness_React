@@ -4,7 +4,7 @@ const CommentCard = () => {
       <div className="flex items-center gap-10 pb-5">
         <img
           className="founded-full"
-          src="../../../public/assets/images/avatar.svg"
+          src={import.meta.env.BASE_URL + "assets/images/avatar.svg"}
           width={25}
           height={25}
           alt="avatar"
