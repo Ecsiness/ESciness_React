@@ -9,7 +9,7 @@ const AboutSection = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         <img
-          src="../../../public/assets/images/about-team-img 2.svg"
+          src={import.meta.env.BASE_URL + "assets/images/about-team-img-2.svg"}
           width={540}
           height={500}
           alt="about-pic"
@@ -33,7 +33,7 @@ const AboutSection = () => {
 
           <div className="grid max-sm:items-center my-10 text-center max-sm:grid-cols-2  max-sm:order-1">
             <img
-              src="../../../public/assets/images/about-team-img 2.svg"
+              src={import.meta.env.BASE_URL + "assets/images/about-team-img-2.svg"}
               width={100}
               height={150}
               alt="about-pic"

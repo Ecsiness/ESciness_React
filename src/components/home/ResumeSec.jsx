@@ -8,7 +8,7 @@ const ResumeSec = () => {
       </h2>
       <div className="flex items-end max-sm:justify-center max-sm:items-center md:flex-col lg:flex-row">
         <img
-          src="../../../public/assets/images/resume-section-img 1.svg"
+          src={import.meta.env.BASE_URL + "assets/images/resume-section-img-1.svg"}
           className="max-sm:hidden md:w-full bg-light-perpule rounded-tl-4xl"
           width={650}
           height={400}

@@ -5,7 +5,7 @@ const BlogCard = () => {
   return (
     <div className="rounded-3xl border  transition-all duration-200 hover:-translate-y-2">
       <img
-        src="../../../public/assets/images/blog-page-01.png.svg"
+        src={import.meta.env.BASE_URL + "assets/images/blog-page-01.png.svg"}
         width={300}
         height={290}
         alt="blog-pic"

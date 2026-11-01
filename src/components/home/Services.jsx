@@ -23,7 +23,7 @@ const Services = () => {
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:p-3 max-md:p-5">
         <div className="flex items-center justify-start gap-2 ">
           <img
-            src="../../../public/assets/icons/servicesicon/management.svg"
+            src={import.meta.env.BASE_URL + "assets/icons/servicesicon/management.svg"}
             width={40}
             height={40}
             alt="manegment-icon"
@@ -39,7 +39,7 @@ const Services = () => {
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:p-3 max-md:p-5">
         <div className="flex items-center justify-start gap-2 ">
           <img
-            src="../../../public/assets/icons/servicesicon/Marketing.svg"
+            src={import.meta.env.BASE_URL + "assets/icons/servicesicon/Marketing.svg"}
             width={40}
             height={40}
             alt="manegment-icon"
@@ -56,7 +56,7 @@ const Services = () => {
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:col-span-2 max-sm:p-3 max-md:p-5">
         <div className="flex items-center justify-start gap-2 ">
           <img
-            src="../../../public/assets/icons/servicesicon/Financial.svg"
+            src={import.meta.env.BASE_URL + "assets/icons/servicesicon/Financial.svg"}
             width={40}
             height={40}
             alt="manegment-icon"
@@ -73,7 +73,7 @@ const Services = () => {
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:p-3 max-md:p-5">
         <div className="flex items-center justify-start gap-2 ">
           <img
-            src="../../../public/assets/icons/servicesicon/HR.svg"
+            src={import.meta.env.BASE_URL + "assets/icons/servicesicon/HR.svg"}
             width={40}
             height={40}
             alt="manegment-icon"
@@ -89,7 +89,7 @@ const Services = () => {
       <div className="col-span-2 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:col-span-1 max-sm:p-3 max-md:p-5">
         <div className="flex items-center justify-start gap-2 ">
           <img
-            src="../../../public/assets/icons/servicesicon/Information Technology.svg"
+            src={import.meta.env.BASE_URL + "assets/icons/servicesicon/Information-Technology.svg"}
             width={40}
             height={40}
             alt="manegment-icon"
@@ -105,7 +105,7 @@ const Services = () => {
       <div className="col-span-2 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:col-span-1 max-sm:p-3 max-md:p-5">
         <div className="flex items-center justify-start gap-2 ">
           <img
-            src="../../../public/assets/icons/servicesicon/Investment.svg"
+            src={import.meta.env.BASE_URL + "assets/icons/servicesicon/Investment.svg"}
             width={40}
             height={40}
             alt="manegment-icon"
@@ -121,7 +121,7 @@ const Services = () => {
       <div className="col-span-1 border grid items-center justify-center gap-5 md:p-10 bg-stone-100 rounded-4xl max-sm:p-3 max-md:p-5">
         <div className="flex items-center justify-start gap-2 ">
           <img
-            src="../../../public/assets/icons/servicesicon/Invention.svg"
+            src={import.meta.env.BASE_URL + "assets/icons/servicesicon/Invention.svg"}
             width={40}
             height={40}
             alt="manegment-icon"

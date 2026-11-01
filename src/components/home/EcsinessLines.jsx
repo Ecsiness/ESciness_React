@@ -9,7 +9,7 @@ const EcsinessLines = () => {
         <div className="bg-light-perpule text-white p-20 rounded-4xl ">
           <div className="flex items-center gap-5 mb-5">
             <img
-              src="../../../public/assets/images/eness 1.svg"
+              src={import.meta.env.BASE_URL + "assets/images/eness-1.svg"}
               width={80}
               height={80}
               className="size-20 bg-white rounded-2xl p-2"
@@ -32,7 +32,7 @@ const EcsinessLines = () => {
         <div className="bg-light-perpule text-white p-20 rounded-4xl">
           <div className="flex items-center gap-5 mb-5">
             <img
-              src="../../../public/assets/images/ecsina 2.svg"
+              src={import.meta.env.BASE_URL + "assets/images/ecsina-2.svg"}
               width={80}
               height={80}
               className="size-20 bg-white rounded-2xl p-2"
