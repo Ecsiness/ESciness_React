@@ -27,7 +27,7 @@ const Footer = () => {
         <section className="flex items-center justify-between p-5 max-sm:flex-col max-md:flex-col">
           <div>
             <img
-              src="../../../public/assets/images/logo 1.svg"
+              src={import.meta.env.BASE_URL + "assets/images/logo-1.svg"}
               alt="logo-image"
               className=" mb-3 max-sm:order-1 "
               width={200}

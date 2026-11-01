@@ -54,7 +54,7 @@ const Navbar = () => {
         </button>
         <div className="flex items-center justify-center">
           <img
-            src="../../../public/assets/images/logo 1.svg"
+            src={import.meta.env.BASE_URL + "assets/images/logo-1.svg"}
             width={128}
             height={150}
             alt="logo-image"
