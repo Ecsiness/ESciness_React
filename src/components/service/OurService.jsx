@@ -6,7 +6,7 @@ export default function OurService() {
     <>
       <section className="grid grid-cols-2 gap-4 mt-11">
         <img
-          src="./../../../public/assets/images/about-team-img 2.svg"
+          src={import.meta.env.BASE_URL + "assets/images/about-team-img-2.svg"}
           alt="about-pic"
         />
         <div className="flex flex-col justify-end gap-7">

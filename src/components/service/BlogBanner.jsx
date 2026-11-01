@@ -5,7 +5,10 @@ export default function BlogBanner() {
   return (
     <>
       <section>
-        <div className="relative w-full h-100 bg-[url(/public/assets/images/service-img/img-banner.png)] bg-no-repeat bg-cover rounded-3xl mt-11">
+        <div 
+          className="relative w-full h-100 bg-no-repeat bg-cover rounded-3xl mt-11"
+          style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/service-img/img-banner.png)` }}
+        >
           <div className="h-full w-full absolute flex justify-center z-0">
             <div className="h-full w-2/4 bg-linear-to-r from-transparent via-[#DBE0E8] to-transparent"></div>
           </div>
