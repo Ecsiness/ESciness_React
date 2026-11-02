@@ -12,59 +12,64 @@ import NotFoundPage from "./NotFoundPage";
 import HomePage from "./Home/HomePage";
 import ServicePage from "./service/ServicePage";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <MainLayout />,
+      children: [
+        {
+          path: "/",
+          element: <HomePage />,
+        },
+        {
+          path: "/about",
+          element: <AboutPage />,
+        },
+        {
+          path: "/services",
+          element: <ServicePage />,
+        },
+        {
+          path: "/contact",
+          element: <ContactPage />,
+        },
+        {
+          path: "/weblog",
+          element: <WeblogPage />,
+        },
+        {
+          path: "/weblog/id",
+          element: <SingleBlogPage />,
+        },
+      ],
+    },
+    {
+      path: "/",
+      element: <SimpleLayout />,
+      children: [
+        {
+          path: "/consulation",
+          element: <ConsulationPage />,
+        },
+        {
+          path: "/auth/register",
+          element: <RegisterPage />,
+        },
+        {
+          path: "/auth/login",
+          element: <LoginPage />,
+        },
+        {
+          path: "*",
+          element: <NotFoundPage />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <MainLayout />,
-    children: [
-      {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "/about",
-        element: <AboutPage />,
-      },
-      {
-        path: "/services",
-        element: <ServicePage />,
-      },
-      {
-        path: "/contact",
-        element: <ContactPage />,
-      },
-      {
-        path: "/weblog",
-        element: <WeblogPage />,
-      },
-      {
-        path: "/weblog/id",
-        element: <SingleBlogPage />,
-      },
-    ],
-  },
-  {
-    path: "/",
-    element: <SimpleLayout />,
-    children: [
-      {
-        path: "/consulation",
-        element: <ConsulationPage />,
-      },
-      {
-        path: "/auth/register",
-        element: <RegisterPage />,
-      },
-      {
-        path: "/auth/login",
-        element: <LoginPage />,
-      },
-      {
-        path: "*",
-        element: <NotFoundPage />,
-      },
-    ],
-  },
-]);
+    basename: import.meta.env.BASE_URL,
+  }
+);
 
 export default router;
